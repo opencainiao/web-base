@@ -124,9 +124,8 @@ public class PageSearchResultHandler {
 
 		return list;
 	}
-	
-	public static PageVO handleBaseModelListNoPage(
-			List<? extends BaseModel> list) {
+
+	public static PageVO handleBaseModelListNoPage(List<? extends BaseModel> list) {
 
 		PageVO pageVO = new PageVO();
 		if (list != null) {
