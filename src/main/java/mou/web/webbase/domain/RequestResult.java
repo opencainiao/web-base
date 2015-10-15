@@ -19,7 +19,7 @@ public class RequestResult {
 	private String success; // y-成功,n-失败
 	private String message; // 消息
 	private String _id_m; // insert成功后的id字符串表示
-	private Map<String, String> errors;
+	private Map<String, String> brErrors;
 	private Object object;// 业务对象
 	private List objects; // 一组业务对象
 
@@ -36,11 +36,11 @@ public class RequestResult {
 	}
 
 	public Map<String, String> getErrors() {
-		return errors;
+		return brErrors;
 	}
 
 	public void setErrors(Map<String, String> errors) {
-		this.errors = errors;
+		this.brErrors = errors;
 		this.success = "n";
 	}
 
